@@ -1,0 +1,24 @@
+package practicapolimorfismo;
+import PaqueteDatos.Vehiculo;
+import PaqueteDatos.VehiculoDeportivo;
+import PaqueteDatos.VehiculoTurismo;
+import PaqueteDatos.VehiculoFurgoneta;
+
+public class PracticaPolimorfismo {
+    
+    public static void main(String[] args) {
+        
+        Vehiculo misvehiculos [] = new Vehiculo [3];
+        
+        misvehiculos[0] = new VehiculoTurismo ("GH67","Ferrari","A89",2);
+        misvehiculos[1] = new VehiculoDeportivo("AA11", "Audi", "P14",4);
+        misvehiculos[2] = new VehiculoFurgoneta("BB22", "Mustand", "ZZ20", 320);
+        
+        for(Vehiculo vehiculos: misvehiculos){
+            System.out.println(vehiculos.mostrardatos());
+            System.out.println("");
+    }
+        
+    }
+    
+}

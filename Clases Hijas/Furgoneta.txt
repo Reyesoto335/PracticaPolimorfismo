@@ -1,0 +1,27 @@
+package PaqueteDatos;
+
+public class VehiculoFurgoneta extends Vehiculo{
+    private int carga;
+    
+    public VehiculoFurgoneta(){
+        super();
+    }
+    
+    public VehiculoFurgoneta(String matricula, String marca, String modelo, int carga){
+        super(matricula, marca, modelo);
+        this.carga = carga;
+    }
+    
+    @Override
+    public String mostrardatos(){
+        return "Matricula\t" + matricula + "\tMarca\t" + marca + "\t\tModelo\t" + modelo + "\tCarga\t"+ carga;
+    }
+
+    public int getCarga() {
+        return carga;
+    }
+
+    public void setCarga(int carga) {
+        this.carga = carga;
+    }   
+}

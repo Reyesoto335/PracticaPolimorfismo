@@ -1,0 +1,27 @@
+package PaqueteDatos;
+
+public class VehiculoDeportivo extends Vehiculo{
+    private int cilindrada;
+    
+    public VehiculoDeportivo(){
+        super();
+    }
+    
+    public VehiculoDeportivo(String matricula, String marca, String modelo, int cilindrada){
+        super(matricula, marca, modelo);
+        this.cilindrada = cilindrada;
+    }
+    
+    @Override
+    public String mostrardatos(){
+        return "Matricula\t" + matricula + "\tMarca\t" + marca + "\t\tModelo\t" + modelo + "\tCilindrada\t" + cilindrada;
+    }
+
+    public int getCilindrada() {
+        return cilindrada;
+    }
+
+    public void setCilindrada(int cilindrada) {
+        this.cilindrada = cilindrada;
+    }
+}

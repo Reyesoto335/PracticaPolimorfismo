@@ -1,0 +1,27 @@
+package PaqueteDatos;
+
+public class VehiculoTurismo extends Vehiculo{
+    private int numeropuertas;
+    
+    public VehiculoTurismo (){
+        super();
+    }
+    
+    public VehiculoTurismo (String matricula, String marca, String modelo, int numeropuertas){
+        super(matricula, marca, modelo);
+        this.numeropuertas = numeropuertas;
+    }
+    
+    @Override
+    public String mostrardatos(){
+        return "Matricula\t" + matricula + "\tMarca\t" + marca + "\t\tModelo\t" + modelo + "\tNumero de puertas\t" + numeropuertas;
+    }
+
+    public int getNumeropuertas() {
+        return numeropuertas;
+    }
+
+    public void setNumeropuertas(int numeropuertas) {
+        this.numeropuertas = numeropuertas;
+    }
+}
